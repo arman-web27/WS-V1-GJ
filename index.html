@@ -1,0 +1,2643 @@
+<!doctype html>
+<html lang="gu">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="preload" as="image" href="./Image/banner.avif" type="image/avif" fetchpriority="high">
+    <meta name="theme-color" content="#EFEDC4">
+    <meta name="description"
+        content="White Spot Care Skin Care: ત્વચાની નિયમિત સંભાળ માટે 3-step routine. સાચી માહિતી અને dermatologist ની સલાહને પ્રાથમિકતા આપો.">
+    <title>White Spot Care | ત્વચાની નિયમિત સંભાળ</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://images.unsplash.com">
+    <link href="https://fonts.googleapis.com/css2?family=Halant:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            color-scheme: light;
+            --blue: #B5123F;
+            --blue-light: #B5123F;
+            --blue-hover: #910D31;
+            --blue-dim: rgba(181, 18, 63, 0.12);
+            --black: #EFEDC4;
+            --card-dark: #FFFFFF;
+            --card-elevated: #FAF8D7;
+            --ink: #1C1C1C;
+            --text-muted: #5A5852;
+            --white: #1C1C1C;
+            --pure-white: #FFFFFF;
+            --font: "Halant", "Noto Serif Devanagari", serif;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 16px;
+        }
+
+        body {
+            margin: 0;
+            background: #D8D6A8;
+            color: var(--ink);
+            font-family: var(--font);
+            font-size: 19.8px;
+            line-height: 1.55;
+        }
+
+        img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .icon {
+            width: 1em;
+            height: 1em;
+            flex: 0 0 auto;
+            fill: none;
+            stroke: currentColor;
+            stroke-width: 2;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+            vertical-align: -.15em;
+        }
+
+        .icon-fill {
+            fill: currentColor;
+            stroke: none;
+        }
+
+        .page-shell > section[aria-labelledby] > h2,
+        .page-shell > section[aria-labelledby] .quality-copy > h2,
+        .page-shell > section[aria-labelledby] .offer-copy > h2 {
+            font-size: 30px;
+            line-height: 1.35;
+            text-align: center;
+            text-wrap: balance;
+        }
+
+        .page-shell > section[aria-labelledby] > .section-lead,
+        .page-shell > section[aria-labelledby] > .kit-subtitle,
+        .page-shell > section[aria-labelledby] > .order-lead,
+        .page-shell > section[aria-labelledby] .quality-kicker,
+        .page-shell > section[aria-labelledby] .offer-label,
+        .page-shell > section[aria-labelledby] .offer-subtitle {
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+        }
+
+        .page-shell > section[aria-labelledby] > .section-lead,
+        .page-shell > section[aria-labelledby] > .kit-subtitle,
+        .page-shell > section[aria-labelledby] > .order-lead,
+        .page-shell > section[aria-labelledby] .offer-subtitle {
+            font-size: 22px;
+            line-height: 1.4;
+        }
+
+        .quality-copy > p:not(.quality-kicker),
+        .offer-copy > .offer-subtitle {
+            text-align: center;
+        }
+
+        a {
+            color: inherit;
+        }
+
+        button,
+        input {
+            font: inherit;
+        }
+
+        .page-shell {
+            width: min(100%, 450px);
+            margin-inline: auto;
+            overflow: hidden;
+            background: #EFEDC4;
+            box-shadow: 0 0 0 1px rgba(181, 18, 63, .18), 0 24px 60px rgba(28, 28, 28, .15);
+        }
+
+        .section-pad {
+            padding: 16px 12px;
+            position: relative;
+        }
+
+        .topline {
+            height: 60px;
+            padding: 0 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: #EFEDC4;
+            border-bottom: 1px solid rgba(28, 28, 28, 0.1);
+        }
+
+        .wordmark {
+            color: var(--ink);
+            font-size: 18.7px;
+            font-weight: 700;
+            letter-spacing: .04em;
+            text-decoration: none;
+        }
+
+        .wordmark span {
+            color: #B5123F;
+        }
+
+        .top-cta {
+            color: #B5123F;
+            font-size: 17.6px;
+            font-weight: 700;
+            text-decoration: none;
+        }
+
+        .top-cta span {
+            display: inline-block;
+            transition: transform .2s ease;
+        }
+
+        .top-cta:hover span {
+            transform: translate(3px, -3px);
+        }
+
+        .hero {
+            background: #EFEDC4;
+        }
+
+        .image-cut {
+            overflow: hidden;
+            isolation: isolate;
+        }
+
+        .image-cut img {
+            transition: transform .6s cubic-bezier(.2, .75, .25, 1), filter .3s ease;
+        }
+
+        .image-cut:hover img {
+            transform: scale(1.045);
+            filter: saturate(1.05);
+        }
+
+        .image-cut-hero {
+            position: relative;
+            height: 245px;
+            clip-path: polygon(0 0, 100% 0, 100% 86%, 85% 100%, 0 93%);
+        }
+
+        .image-cut-hero::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(0deg, rgba(239, 237, 196, .7), transparent 64%);
+            pointer-events: none;
+        }
+
+        .photo-caption {
+            position: absolute;
+            z-index: 1;
+            bottom: 25px;
+            left: 18px;
+            color: #1C1C1C;
+            font-size: 16.5px;
+        }
+
+        .hero-copy {
+            padding-top: 18px;
+        }
+
+        .eyebrow,
+        .product-no,
+        .offer-label {
+            margin: 0;
+            color: #B5123F;
+            font-size: 14.3px;
+            font-weight: 700;
+            letter-spacing: .04em;
+        }
+
+        .eyebrow {
+            display: flex;
+            gap: 8px;
+            align-items: center;
+            color: #B5123F;
+        }
+
+        .eyebrow-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: #B5123F;
+            box-shadow: 0 0 0 4px rgba(181, 18, 63, .2);
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        p {
+            margin-top: 0;
+        }
+
+        h1 {
+            margin: 12px 0 10px;
+            font-size: clamp(31.9px, 8.8vw, 39.6px);
+            line-height: 1.33;
+            font-weight: 700;
+            color: #1C1C1C;
+        }
+
+        .hero-subtitle {
+            margin-bottom: 18px;
+            color: #B5123F;
+            font-size: 23.1px;
+            font-weight: 600;
+            line-height: 1.4;
+        }
+
+        .button {
+            min-height: 52px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            border: 0;
+            border-radius: 6px;
+            padding: 12px 18px;
+            font-size: 18.7px;
+            font-weight: 700;
+            line-height: 1.35;
+            text-align: center;
+            text-decoration: none;
+            cursor: pointer;
+            transition: transform .2s ease, box-shadow .2s ease, background .2s ease;
+        }
+
+        .button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 9px 20px rgba(181, 18, 63, .3);
+        }
+
+        .button:active {
+            transform: translateY(1px) scale(.99);
+            box-shadow: none;
+        }
+
+        .button-primary {
+            background: #B5123F;
+            color: #FFFFFF;
+        }
+
+        .button-primary:hover {
+            background: #910D31;
+            color: #FFFFFF;
+        }
+
+        .hero-note,
+        .fine-print {
+            margin: 13px 0 0;
+            color: var(--text-muted);
+            font-size: 14.3px;
+            line-height: 1.5;
+        }
+
+        .hero-stamp {
+            position: absolute;
+            right: 23px;
+            top: 235px;
+            width: 64px;
+            height: 64px;
+            border: 1px solid #B5123F;
+            border-radius: 50%;
+            display: grid;
+            align-content: center;
+            justify-items: center;
+            background: #FFFFFF;
+            color: #B5123F;
+            transform: rotate(10deg);
+            box-shadow: 0 4px 14px rgba(181, 18, 63, .2);
+        }
+
+        .hero-stamp span {
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: .1em;
+        }
+
+        .hero-stamp b {
+            font-size: 25.3px;
+            line-height: 1;
+        }
+
+        .pain {
+            background: #E8E5B8;
+            padding: 38px 24px 0px 24px;
+        }
+
+        .pain h2,
+        .ingredients h2,
+        .quality h2,
+        .compare h2,
+        .experience h2,
+        .reviews h2,
+        .offer h2,
+        .final-cta h2,
+        .order h2,
+        .faq h2 {
+            margin-bottom: 12px;
+            font-size: 29.7px;
+            line-height: 1.38;
+            color: #1C1C1C;
+        }
+
+        .section-lead {
+            margin-bottom: 20px;
+            color: #B5123F;
+            font-size: 20.9px;
+            font-weight: 600;
+        }
+
+        .pain-list {
+            margin-inline: -24px;
+            border-top: 1px solid rgba(181, 18, 63, .2);
+        }
+
+        .pain-list img {
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+        }
+
+        .pain-card-grid {
+            position: relative;
+            display: grid;
+            gap: 26px 0;
+            padding: 22px 0 28px;
+            background: #E8E5B8;
+        }
+
+        .pain-card-grid::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            width: 2px;
+            transform: translateX(-50%);
+            background: rgba(181, 18, 63, .35);
+        }
+
+        .pain-card {
+            position: relative;
+            z-index: 1;
+            display: grid;
+            grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+            align-items: center;
+            gap: 38px;
+            min-height: 142px;
+            padding: 0 12px;
+            background: transparent;
+        }
+
+        .pain-card::after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 14px;
+            height: 14px;
+            transform: translate(-50%, -50%);
+            border: 2px solid #B5123F;
+            border-radius: 50%;
+            background: #EFEDC4;
+            box-shadow: 0 0 0 4px rgba(181, 18, 63, .16);
+        }
+
+        .pain-card:nth-child(even) h3 {
+            grid-column: 1;
+            grid-row: 1;
+        }
+
+        .pain-card:nth-child(even) img {
+            grid-column: 2;
+            grid-row: 1;
+        }
+
+        .pain-card img {
+            width: 100%;
+            height: 142px;
+            object-fit: cover;
+            border: 2px solid #FFFFFF;
+            border-radius: 12px;
+            box-shadow: 0 6px 16px rgba(28, 28, 28, .12);
+            transition: transform .3s ease, border-color .3s ease, box-shadow .3s ease;
+        }
+
+        .pain-card h3 {
+            margin: 0;
+            padding: 8px 0;
+            color: #1C1C1C;
+            font-size: 19px;
+            line-height: 1.35;
+            text-align: left;
+            text-wrap: balance;
+            transition: color .3s ease, transform .3s ease;
+        }
+
+        .pain-card:hover img {
+            transform: scale(1.035);
+            border-color: #B5123F;
+            box-shadow: 0 0 0 2px rgba(181, 18, 63, .25), 0 10px 24px rgba(28, 28, 28, .18);
+        }
+
+        .pain-card:hover h3 {
+            color: #B5123F;
+            transform: translateY(-2px);
+        }
+
+        .pain-card:hover::after {
+            background: #B5123F;
+            box-shadow: 0 0 0 5px rgba(181, 18, 63, .2), 0 0 14px rgba(181, 18, 63, .5);
+        }
+
+        .pain-card:nth-child(odd) h3 {
+            text-align: left;
+        }
+
+        .pain-card:nth-child(even) h3 {
+            text-align: right;
+        }
+
+        @media (max-width: 380px) {
+            .pain-card {
+                gap: 28px;
+                padding-inline: 8px;
+            }
+
+            .pain-card img {
+                height: 120px;
+            }
+
+            .pain-card h3 {
+                font-size: 16px;
+            }
+        }
+
+        .pain-row {
+            min-height: 77px;
+            display: grid;
+            grid-template-columns: 25px 54px 1fr 18px;
+            gap: 10px;
+            align-items: center;
+            border-bottom: 1px solid rgba(28, 28, 28, .1);
+            transition: background .2s ease, padding .2s ease;
+        }
+
+        .pain-row:hover {
+            padding-inline: 5px;
+            background: rgba(181, 18, 63, .08);
+        }
+
+        .pain-index {
+            color: #B5123F;
+            font-size: 13.2px;
+            font-weight: 700;
+        }
+
+        .pain-photo {
+            width: 48px;
+            height: 48px;
+            clip-path: polygon(0 0, 87% 0, 100% 78%, 17% 100%);
+        }
+
+        .pain-row h3 {
+            margin: 0;
+            font-size: 18.7px;
+            line-height: 1.3;
+            color: #1C1C1C;
+        }
+
+        .row-arrow {
+            color: #B5123F;
+            transition: transform .2s ease;
+        }
+
+        .pain-row:hover .row-arrow {
+            transform: translate(2px, -2px);
+        }
+
+        .kit {
+            background: #EFEDC4;
+            color: #1C1C1C;
+            border-top: 1px solid rgba(181, 18, 63, .18);
+            border-bottom: 1px solid rgba(181, 18, 63, .18);
+        }
+
+        .kit .product-no {
+            color: #B5123F;
+        }
+
+        .kit h2 {
+            margin: 12px auto 5px;
+            color: #1C1C1C;
+            font-size: 36.3px;
+            line-height: 1.12;
+            text-align: center;
+            text-wrap: balance;
+        }
+
+        .product-intro-visual {
+            position: relative;
+            display: grid;
+            place-items: center;
+            min-height: 320px;
+            margin: 22px 0 20px;
+            overflow: hidden;
+            border: 1px solid rgba(181, 18, 63, .22);
+            border-radius: 22px;
+            background: radial-gradient(circle, rgba(181, 18, 63, .12), transparent 60%), #FFFFFF;
+            box-shadow: 0 8px 24px rgba(28, 28, 28, .06);
+        }
+
+        .product-intro-visual::before,
+        .product-intro-visual::after {
+            content: "";
+            position: absolute;
+            border: 1px dashed rgba(181, 18, 63, .35);
+            border-radius: 50%;
+        }
+
+        .product-intro-visual::before {
+            width: 282px;
+            height: 282px;
+        }
+
+        .product-intro-visual::after {
+            width: 226px;
+            height: 226px;
+            border-color: rgba(28, 28, 28, .15);
+        }
+
+        .product-intro-image {
+            position: relative;
+            z-index: 1;
+            width: 198px;
+            height: 198px;
+            overflow: hidden;
+            border: 6px solid #EFEDC4;
+            border-radius: 50%;
+            background: #FFFFFF;
+            box-shadow: 0 0 0 8px rgba(181, 18, 63, .15), 0 12px 28px rgba(28, 28, 28, .16);
+            transition: transform .35s ease, box-shadow .35s ease;
+        }
+
+        .product-intro-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform .5s ease, filter .35s ease;
+        }
+
+        .product-intro-visual:hover .product-intro-image {
+            transform: scale(1.045);
+            box-shadow: 0 0 0 10px rgba(181, 18, 63, .2), 0 0 28px rgba(181, 18, 63, .3), 0 18px 34px rgba(28, 28, 28, .2);
+        }
+
+        .product-intro-visual:hover .product-intro-image img {
+            transform: scale(1.08);
+            filter: saturate(1.1);
+        }
+
+        .product-intro-badge {
+            position: absolute;
+            z-index: 2;
+            display: grid;
+            place-items: center;
+            width: 72px;
+            height: 72px;
+            padding: 7px;
+            border: 1px solid #FFFFFF;
+            border-radius: 50%;
+            background: #B5123F;
+            color: #FFFFFF;
+            font-size: 12px;
+            font-weight: 700;
+            line-height: 1.1;
+            text-align: center;
+            box-shadow: 0 6px 16px rgba(181, 18, 63, .35);
+        }
+
+        .product-intro-badge:first-of-type { top: 22px; left: 18px; }
+        .product-intro-badge:last-of-type { right: 18px; bottom: 22px; }
+
+        .product-intro-points {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 8px;
+            margin-bottom: 18px;
+        }
+
+        .product-intro-point {
+            padding: 10px 8px;
+            border: 1px solid rgba(181, 18, 63, .22);
+            border-radius: 10px;
+            background: #FFFFFF;
+            color: #1C1C1C;
+            font-size: 14.5px;
+            font-weight: 600;
+            text-align: center;
+            box-shadow: 0 3px 8px rgba(28, 28, 28, .04);
+        }
+
+        .how-it-works {
+            padding: 34px 12px 28px;
+            background: #E8E5B8;
+        }
+
+        .how-it-works > h2,
+        .how-it-works > .section-lead {
+            text-align: center;
+        }
+
+        .how-it-works > h2 {
+            margin-bottom: 7px;
+            color: #1C1C1C;
+            font-size: 30px;
+            line-height: 1.3;
+        }
+
+        .how-it-works > .section-lead {
+            margin: 0 auto 22px;
+            color: #B5123F;
+            font-size: 22px;
+            font-weight: 600;
+            line-height: 1.4;
+        }
+
+        .how-card {
+            display: grid;
+            grid-template-columns: 42% 58%;
+            align-items: stretch;
+            overflow: hidden;
+            min-height: 154px;
+            border: 1px solid rgba(181, 18, 63, .2);
+            border-radius: 12px;
+            background: #FFFFFF;
+            box-shadow: 0 4px 14px rgba(28, 28, 28, .05);
+            margin-bottom: 12px;
+        }
+
+        .how-card:nth-of-type(even) {
+            grid-template-columns: 58% 42%;
+        }
+
+        .how-card:nth-of-type(even) .how-card-image {
+            order: 2;
+        }
+
+        .how-card-image {
+            min-height: 154px;
+            overflow: hidden;
+        }
+
+        .how-card-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform .4s ease, filter .4s ease;
+        }
+
+        .how-card:hover .how-card-image img {
+            transform: scale(1.07);
+            filter: saturate(1.1);
+        }
+
+        .how-card-copy {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 18px 15px;
+        }
+
+        .how-card-number {
+            margin-bottom: 5px;
+            color: #B5123F;
+            font-size: 20px;
+            font-weight: 700;
+            letter-spacing: .08em;
+        }
+
+        .how-card h3 {
+            margin: 0 0 7px;
+            color: #1C1C1C;
+            font-size: 20px;
+            line-height: 1.25;
+        }
+
+        .how-card p {
+            margin: 0;
+            color: var(--text-muted);
+            font-size: 16px;
+            line-height: 1.4;
+        }
+
+        @media (max-width: 380px) {
+            .how-card,
+            .how-card:nth-of-type(even) {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .how-card-copy {
+                padding: 13px 10px;
+            }
+
+            .how-card h3 {
+                font-size: 17px;
+            }
+
+            .how-card p {
+                font-size: 14px;
+            }
+        }
+
+        .kit-subtitle {
+            margin-bottom: 17px;
+            color: #B5123F;
+            font-size: 22px;
+        }
+
+        .kit-intro {
+            margin-bottom: 12px;
+            font-size: 18.7px;
+            color: #1C1C1C;
+        }
+
+        .kit-orbit {
+            position: absolute;
+            right: 19px;
+            top: 35px;
+            width: 73px;
+            height: 73px;
+            display: grid;
+            place-content: center;
+            border: 1px solid #B5123F;
+            border-radius: 50%;
+            color: #B5123F;
+            font-size: 33px;
+            font-weight: 700;
+            line-height: .9;
+            text-align: center;
+            background: rgba(181, 18, 63, 0.1);
+            transform: rotate(9deg);
+        }
+
+        .kit-orbit span {
+            font-size: 9.9px;
+            letter-spacing: .12em;
+        }
+
+        .product-stack {
+            display: grid;
+            gap: 12px;
+            margin-top: 21px;
+        }
+
+        .product-row {
+            display: grid;
+            grid-template-columns: 112px 1fr;
+            min-height: 119px;
+            background: #FFFFFF;
+            color: #1C1C1C;
+            border: 1px solid rgba(181, 18, 63, 0.18);
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform .25s ease, border-color .25s ease;
+        }
+
+        .product-row:hover {
+            transform: translateX(5px);
+            border-color: #B5123F;
+        }
+
+        .product-image {
+            height: 100%;
+            min-height: 119px;
+            clip-path: polygon(0 0, 100% 0, 88% 100%, 0 90%);
+        }
+
+        .product-copy {
+            align-self: center;
+            padding: 11px 12px;
+        }
+
+        .product-no {
+            font-size: 11px;
+        }
+
+        .product-copy h4 {
+            margin: 5px 0 4px;
+            color: #B5123F;
+            font-size: 17.6px;
+            line-height: 1.2;
+        }
+
+        .product-copy p {
+            margin: 0;
+            font-size: 15.4px;
+            line-height: 1.35;
+            color: var(--text-muted);
+        }
+
+        .ingredients {
+            background-color: #EFEDC4;
+            background-image: repeating-linear-gradient(135deg, rgba(181, 18, 63, .03) 0 1px, transparent 1px 13px);
+        }
+
+        .ingredients h2 {
+            width: min(100%, 350px);
+            margin: 0 auto 14px;
+            padding: 13px 16px 11px;
+            clip-path: polygon(2% 8%, 96% 0, 100% 82%, 92% 95%, 8% 100%, 0 20%);
+            background: #B5123F;
+            color: #FFFFFF;
+            font-size: 31.9px;
+            line-height: 1.18;
+            text-align: center;
+            text-wrap: balance;
+            box-shadow: 0 6px 18px rgba(181, 18, 63, .3);
+        }
+
+        .ingredients h2 span {
+            color: #EFEDC4;
+        }
+
+        .ingredients .section-lead {
+            width: fit-content;
+            max-width: 100%;
+            margin: 0 auto 25px;
+            padding: 5px 16px 3px;
+            background: #FFFFFF;
+            color: #B5123F;
+            border: 1px solid rgba(181, 18, 63, .3);
+            border-radius: 999px;
+            font-size: 18.7px;
+            line-height: 1.35;
+            text-align: center;
+            text-wrap: balance;
+            box-shadow: 0 3px 10px rgba(28, 28, 28, .05);
+        }
+
+        .ingredient-hero {
+            position: relative;
+            height: 196px;
+            margin: 19px 0 16px;
+            clip-path: polygon(0 0, 100% 0, 100% 82%, 88% 100%, 0 90%);
+        }
+
+        .ingredient-hero::after {
+            content: "";
+            position: absolute;
+            inset: 40% 0 0;
+            background: linear-gradient(0deg, rgba(239, 237, 196, .85), transparent);
+        }
+
+        .ingredient-hero span {
+            position: absolute;
+            z-index: 1;
+            bottom: 18px;
+            left: 17px;
+            color: #1C1C1C;
+            font-weight: 600;
+        }
+
+        .ingredient-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 12px;
+            padding: 9px 2px 0;
+        }
+
+        .ingredient-item {
+            position: relative;
+            min-width: 0;
+            padding: 12px 8px 14px;
+            border: 1px solid rgba(181, 18, 63, .22);
+            border-radius: 38px 38px 29px 29px;
+            background: #FFFFFF;
+            box-shadow: 0 5px 15px rgba(28, 28, 28, .06);
+            text-align: center;
+            transition: transform .3s ease, border-color .3s ease, box-shadow .3s ease;
+        }
+
+        .ingredient-item:hover {
+            transform: translateY(-5px);
+            border-color: #B5123F;
+            box-shadow: 0 10px 22px rgba(181, 18, 63, .15);
+        }
+
+        .ingredient-photo {
+            width: 100%;
+            height: 128px;
+            margin: 0 auto 10px;
+            border-radius: 50%;
+            background: #EFEDC4;
+            transition: transform .35s ease, filter .35s ease;
+        }
+
+        .ingredient-photo img {
+            border-radius: inherit;
+        }
+
+        .ingredient-item>span {
+            display: block;
+            margin-bottom: 6px;
+            border-radius: 999px;
+            background: #B5123F;
+            color: #FFFFFF;
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 1.65;
+        }
+
+        .ingredient-item p {
+            margin: 0;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 1.35;
+            color: var(--text-muted);
+            text-wrap: balance;
+        }
+
+        .ingredient-item:hover .ingredient-photo {
+            transform: scale(1.035);
+            filter: saturate(1.1);
+        }
+
+        .ingredient-item b {
+            position: absolute;
+            top: -8px;
+            left: 50%;
+            width: 34px;
+            height: 34px;
+            transform: translateX(-50%);
+            border: 2px solid #EFEDC4;
+            border-radius: 50%;
+            display: grid;
+            place-items: center;
+            background: #B5123F;
+            color: #FFFFFF;
+            font-size: 15.4px;
+            font-weight: 700;
+        }
+
+        .ingredient-caption {
+            margin: 16px auto 12px;
+            padding: 7px 12px;
+            border: 1px solid #B5123F;
+            border-radius: 999px;
+            background: rgba(181, 18, 63, 0.1);
+            color: #B5123F;
+            font-size: 18.7px;
+            font-weight: 700;
+            text-align: center;
+        }
+
+        .ingredient-note {
+            margin: 0 auto 12px;
+            color: #1C1C1C;
+            font-size: 20.9px;
+            font-weight: 700;
+            line-height: 1.4;
+            text-align: center;
+            text-wrap: balance;
+        }
+
+        .ingredient-disclaimer {
+            margin: 0;
+            padding: 10px 12px;
+            border-radius: 14px;
+            background: #E8E5B8;
+            color: #1C1C1C;
+            font-size: 13.2px;
+            line-height: 1.4;
+            text-align: center;
+        }
+
+        .quality {
+            padding: 28px 20px 24px;
+            background: #E8E5B8;
+            color: var(--ink);
+        }
+
+        .quality-kicker {
+            display: table;
+            margin: 0 0 12px;
+            padding: 3px 10px;
+            border: 1px solid #B5123F;
+            border-radius: 999px;
+            color: #B5123F;
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: .08em;
+        }
+
+        .quality-copy {
+            padding: 0 2px 20px;
+            text-align: center;
+        }
+
+        .quality h2 {
+            margin-bottom: 10px;
+            font-size: 29.7px;
+            line-height: 1.22;
+        }
+
+        .quality h2 span {
+            display: block;
+            color: #B5123F;
+        }
+
+        .quality-copy p {
+            max-width: 38ch;
+            margin: 0 auto;
+            color: #B5123F;
+            font-size: 22px;
+            font-weight: 600;
+            line-height: 1.45;
+        }
+
+        .quality-marks {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 12px;
+        }
+
+        .quality-marks span {
+            min-width: 0;
+            min-height: 190px;
+            display: grid;
+            grid-template-rows: 120px auto;
+            align-content: start;
+            justify-items: center;
+            gap: 5px;
+            padding: 14px 8px 12px;
+            border: 1px solid rgba(181, 18, 63, .25);
+            border-radius: 16px;
+            background: #FFFFFF;
+            color: var(--ink);
+            text-align: center;
+            box-shadow: 0 4px 14px rgba(28, 28, 28, .06);
+            transition: transform .3s ease, border-color .3s ease, box-shadow .3s ease;
+        }
+
+        .quality-marks span:hover {
+            transform: translateY(-4px);
+            border-color: #B5123F;
+            box-shadow: 0 10px 22px rgba(181, 18, 63, .16);
+        }
+
+        .quality-marks img {
+            width: 112px;
+            height: 112px;
+            object-fit: contain;
+            filter: drop-shadow(0 2px 4px rgba(28, 28, 28, 0.15));
+        }
+
+        .quality-marks b {
+            align-self: start;
+            width: 100%;
+            margin-top: 5px;
+            padding: 4px 2px;
+            border-radius: 999px;
+            background: #B5123F !important;
+            color: #FFFFFF;
+            font-size: 15px;
+            line-height: 1.35;
+        }
+
+        .quality-marks small {
+            display: none;
+        }
+
+        .quality-marks .mark-iso b,
+        .quality-marks .mark-fssai b,
+        .quality-marks .mark-lab b {
+            background: #B5123F !important;
+        }
+
+        .quality-note {
+            display: grid;
+            grid-template-columns: 44px 1fr;
+            gap: 12px;
+            align-items: center;
+            margin-top: 13px;
+            padding: 12px;
+            border: 1px solid rgba(181, 18, 63, .2);
+            border-radius: 16px;
+            background: #FFFFFF;
+            box-shadow: 0 4px 12px rgba(28, 28, 28, .05);
+        }
+
+        .quality-note span {
+            width: 40px;
+            height: 46px;
+            display: grid;
+            place-items: center;
+            clip-path: polygon(50% 0, 100% 18%, 94% 72%, 50% 100%, 6% 72%, 0 18%);
+            background: #B5123F;
+            color: #FFFFFF;
+            font-size: 27.5px;
+            font-weight: 700;
+        }
+
+        .quality-note p {
+            margin: 0;
+            font-size: 15.4px;
+            font-weight: 600;
+            line-height: 1.4;
+            color: #1C1C1C;
+        }
+
+        .compare {
+            display: none;
+        }
+
+        .experience {
+            min-height: 335px;
+            display: flex;
+            align-items: flex-end;
+            background: #E8E5B8;
+            color: #1C1C1C;
+        }
+
+        .reviews {
+            background: #EFEDC4;
+        }
+
+        .reviews > h2 {
+            margin-bottom: 18px;
+            text-align: center;
+        }
+
+        .review-banner {
+            position: relative;
+            height: 160px;
+            margin: -38px -24px 23px;
+            clip-path: polygon(0 0, 100% 0, 100% 88%, 8% 100%);
+        }
+
+        .review-banner::after {
+            content: "";
+            position: absolute;
+            inset: 25% 0 0;
+            background: linear-gradient(0deg, rgba(239, 237, 196, .85), transparent);
+        }
+
+        .review-banner span {
+            position: absolute;
+            z-index: 1;
+            bottom: 17px;
+            left: 24px;
+            color: #1C1C1C;
+            font-size: 19.8px;
+            font-weight: 600;
+        }
+
+        .sample-warning {
+            padding: 10px 12px;
+            border-left: 3px solid #B5123F;
+            background: #FFFFFF;
+            font-size: 15.4px;
+            color: #1C1C1C;
+        }
+
+        .review-quote {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            margin-top: 14px;
+            padding: 20px 16px;
+            border: 1px solid rgba(181, 18, 63, .22);
+            border-radius: 16px;
+            background: #FFFFFF;
+            box-shadow: 0 4px 14px rgba(28, 28, 28, .06);
+            text-align: center;
+            transition: transform .3s ease, box-shadow .3s ease, border-color .3s ease;
+        }
+
+        .review-quote:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 22px rgba(181, 18, 63, .14);
+            border-color: #B5123F;
+        }
+
+        .review-avatar-wrap {
+            position: relative;
+            width: 96px;
+            height: 96px;
+            display: grid;
+            place-items: center;
+            overflow: hidden;
+            border: 3px solid #B5123F;
+            border-radius: 50%;
+            background: #EFEDC4;
+            color: #B5123F;
+            font-size: 24.2px;
+            font-weight: 700;
+        }
+
+        .review-avatar {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: inherit;
+            object-fit: cover;
+        }
+
+        .review-avatar[hidden] {
+            display: none;
+        }
+
+        .review-content {
+            min-width: 0;
+            width: 100%;
+        }
+
+        .review-sample,
+        .review-product {
+            display: none;
+        }
+
+        .review-topline,
+        .review-byline {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            gap: 5px 8px;
+        }
+
+        .review-topline {
+            justify-content: center;
+            margin-bottom: 8px;
+        }
+
+        .stars {
+            color: #B5123F;
+            letter-spacing: .02em;
+            font-size: 19.8px;
+            line-height: 1;
+        }
+
+        .stars .icon {
+            width: .95em;
+            height: .95em;
+            margin-right: 1px;
+            fill: currentColor;
+            stroke: none;
+        }
+
+        .review-quote blockquote {
+            margin: 5px 0 8px;
+            font-size: 15.8px;
+            line-height: 1.45;
+            color: #383734;
+        }
+
+        .review-byline {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            margin-top: 10px;
+            gap: 3px 10px;
+        }
+
+        .review-byline p {
+            color: #1C1C1C;
+            font-weight: 700;
+        }
+
+        .review-quote p {
+            margin: 0;
+            color: #B5123F;
+            font-size: 15.4px;
+            font-weight: 700;
+        }
+
+        .review-location {
+            color: var(--text-muted);
+            font-size: 12.1px;
+        }
+
+        .review-disclaimer {
+            margin: 15px 0 0;
+            font-size: 14.3px;
+            line-height: 1.5;
+            color: var(--text-muted);
+        }
+
+        .offer {
+            padding: 22px 14px 20px;
+            border: 2px solid #B5123F;
+            border-radius: 18px;
+            background: #FFFFFF;
+            color: #1C1C1C;
+            box-shadow: 0 10px 30px rgba(181, 18, 63, .12);
+        }
+
+        .offer .offer-perks {
+            display: none;
+        }
+
+        .offer .offer-label {
+            margin-bottom: 8px;
+        }
+
+        .offer .offer-photo {
+            max-height: 190px;
+            margin: 12px auto 16px;
+        }
+
+        .offer .offer-copy:last-child {
+            display: flex;
+            justify-content: center;
+        }
+
+        .offer .offer-copy:last-child .button {
+            width: min(100%, 320px);
+        }
+
+        .offer-photo {
+            aspect-ratio: 3 / 2;
+            margin: 0 0 8px;
+            overflow: hidden;
+            border: 1px solid rgba(181, 18, 63, .2);
+            border-radius: 12px;
+            background: #EFEDC4;
+            box-shadow: 0 4px 12px rgba(28, 28, 28, .08);
+        }
+
+        .offer-photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        .offer-copy {
+            text-align: center;
+        }
+
+        .offer-label {
+            width: fit-content;
+            max-width: 100%;
+            margin: 0 auto 13px;
+            padding: 8px 18px;
+            border: 1px solid #B5123F;
+            border-radius: 999px;
+            background: #B5123F;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 7px;
+            color: #FFFFFF;
+            font-size: 16.5px;
+            font-weight: 700;
+            box-shadow: 0 4px 14px rgba(181, 18, 63, .3);
+        }
+
+        .offer h2 {
+            margin: 0 0 4px;
+            color: #1C1C1C;
+            font-size: 30.8px;
+            line-height: 1.15;
+            text-wrap: balance;
+        }
+
+        .offer h2 em {
+            display: block;
+            color: #B5123F;
+            font-style: normal;
+            font-size: 31.9px;
+        }
+
+        .offer-subtitle {
+            margin-bottom: 0;
+            color: var(--text-muted);
+            font-size: 17.6px;
+            line-height: 1.4;
+        }
+
+        .button-dark {
+            width: 100%;
+            min-height: 56px;
+            border-radius: 999px;
+            background: #B5123F;
+            color: #FFFFFF;
+            box-shadow: 0 6px 18px rgba(181, 18, 63, .35);
+        }
+
+        .button-dark:hover {
+            background: #910D31;
+            color: #FFFFFF;
+        }
+
+        .offer .fine-print {
+            margin: 12px 0 0;
+            color: var(--text-muted);
+            font-size: 13.2px;
+            text-align: center;
+        }
+
+        .final-cta {
+            overflow: hidden;
+            background: #EFEDC4;
+        }
+
+        .final-cta h2 {
+            clear: both;
+            font-size: 31.9px;
+            color: #1C1C1C;
+        }
+
+        .final-cta>p {
+            margin-bottom: 15px;
+            color: var(--text-muted);
+        }
+
+        .final-cta h3 {
+            margin: 0 0 4px;
+            color: #B5123F;
+            font-size: 20.9px;
+        }
+
+        .cta-offer {
+            display: block;
+            margin-bottom: 13px;
+            color: #B5123F;
+        }
+
+        .final-cta .button {
+            width: 100%;
+        }
+
+        .order {
+            background: #E8E5B8;
+            color: #1C1C1C;
+            border-top: 1px solid rgba(181, 18, 63, .2);
+        }
+
+        .order h2 {
+            color: #1C1C1C;
+            margin-bottom: 3px;
+        }
+
+        .order-lead {
+            margin-bottom: 17px;
+            color: #B5123F;
+            font-weight: 700;
+        }
+
+        #order-form {
+            display: grid;
+            gap: 8px;
+            padding: 18px;
+            border: 2px solid #B5123F;
+            background: #FFFFFF;
+            border-radius: 12px;
+            box-shadow: 0 8px 24px rgba(28, 28, 28, .08);
+            transition: border-color .2s ease, box-shadow .2s ease;
+        }
+
+        #order-form.is-loading {
+            border-color: #B5123F;
+            box-shadow: 0 0 0 3px rgba(181, 18, 63, .25);
+        }
+
+        #order-form label {
+            margin-top: 4px;
+            color: #1C1C1C;
+            font-size: 17.6px;
+            font-weight: 700;
+        }
+
+        #order-form label span {
+            color: #B5123F;
+        }
+
+        #order-form input {
+            width: 100%;
+            min-height: 50px;
+            border: 1px solid rgba(28, 28, 28, .2);
+            border-radius: 6px;
+            padding: 10px 12px;
+            background: #FAF8D7;
+            color: #1C1C1C;
+            outline: none;
+            transition: border .2s ease, box-shadow .2s ease;
+        }
+
+        #order-form textarea {
+            width: 100%; min-height: 92px; resize: vertical;
+            border: 1px solid rgba(28, 28, 28, .2); border-radius: 6px;
+            padding: 10px 12px; background: #FAF8D7; color: #1C1C1C;
+            outline: none; font: inherit; transition: border .2s ease, box-shadow .2s ease;
+        }
+        #order-form textarea:focus { border-color: #B5123F; box-shadow: 0 0 0 3px rgba(181, 18, 63, .2); }
+        #order-form textarea::placeholder { color: #8C8A84; }
+
+        #order-form input:focus {
+            border-color: #B5123F;
+            box-shadow: 0 0 0 3px rgba(181, 18, 63, .2);
+        }
+
+        #order-form input::placeholder {
+            color: #8C8A84;
+        }
+
+        .phone-field {
+            display: grid;
+            grid-template-columns: auto minmax(0, 1fr);
+            align-items: center;
+            border: 1px solid rgba(28, 28, 28, .2);
+            border-radius: 6px;
+            background: #FAF8D7;
+            transition: border-color .2s ease, box-shadow .2s ease;
+        }
+
+        .phone-field:focus-within {
+            border-color: #B5123F;
+            box-shadow: 0 0 0 3px rgba(181, 18, 63, .2);
+        }
+
+        .country-code {
+            padding: 0 12px;
+            border-right: 1px solid rgba(28, 28, 28, .15);
+            color: #B5123F;
+            font-weight: 700;
+        }
+
+        #order-form .phone-field input {
+            min-width: 0;
+            border: 0;
+            background: transparent;
+            box-shadow: none;
+        }
+
+        .submit-button {
+            width: 100%;
+            margin-top: 9px;
+        }
+
+        .button-spinner {
+            display: none;
+            width: 22px;
+            height: 22px;
+            flex: 0 0 22px;
+            border: 3px solid rgba(255, 255, 255, .3);
+            border-top-color: #FFFFFF;
+            border-radius: 50%;
+            animation: spin .7s linear infinite;
+        }
+
+        .submit-button.is-loading .button-spinner {
+            display: block;
+        }
+
+        .submit-button.is-loading .button-label {
+            opacity: .88;
+        }
+
+        .submit-button.is-loading {
+            background: #910D31;
+            cursor: wait;
+        }
+
+        .submit-button:disabled {
+            cursor: wait;
+        }
+
+        .form-loading-overlay {
+            position: fixed;
+            z-index: 1000;
+            inset: 0;
+            display: grid;
+            place-content: center;
+            justify-items: center;
+            gap: 14px;
+            padding: 24px;
+            background: rgba(239, 237, 196, .96);
+            color: #1C1C1C;
+            text-align: center;
+        }
+
+        .form-loading-overlay[hidden] {
+            display: none;
+        }
+
+        .form-loading-overlay p {
+            margin: 0;
+            font-size: 24.2px;
+            font-weight: 700;
+        }
+
+        .overlay-spinner {
+            width: 52px;
+            height: 52px;
+            border: 5px solid rgba(181, 18, 63, .2);
+            border-top-color: #B5123F;
+            border-radius: 50%;
+            animation: spin .7s linear infinite;
+        }
+
+        body.is-form-loading {
+            overflow: hidden;
+        }
+
+        .order-perks {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 7px;
+            margin-top: 7px;
+            color: #B5123F;
+            font-size: 14.3px;
+            font-weight: 700;
+        }
+
+        .order-perks span,
+        .privacy-note,
+        .review-location {
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .order-perks .icon {
+            color: #B5123F;
+        }
+
+        .form-error {
+            color: #B5123F;
+            font-weight: 700;
+            margin: 7px 0 0;
+            font-size: 14.3px;
+            line-height: 1.45;
+        }
+
+        .form-status {
+            color: #1C1C1C;
+            font-weight: 700;
+            margin: 7px 0 0;
+            font-size: 14.3px;
+            line-height: 1.45;
+        }
+
+        @keyframes spin {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        .faq {
+            background: #EFEDC4;
+        }
+
+        .faq h2 {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .faq details {
+            margin: 10px 0;
+            overflow: hidden;
+            border: 1px solid rgba(181, 18, 63, .22);
+            border-radius: 13px;
+            background: #FFFFFF;
+            box-shadow: 0 4px 12px rgba(28, 28, 28, .05);
+            transition: border-color .25s ease, box-shadow .25s ease;
+        }
+
+        .faq details[open] {
+            border-color: #B5123F;
+            box-shadow: 0 6px 18px rgba(181, 18, 63, .12);
+        }
+
+        .faq summary {
+            position: relative;
+            padding: 16px 42px 16px 16px;
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 1.4;
+            color: #1C1C1C;
+            cursor: pointer;
+            list-style: none;
+        }
+
+        .faq summary::-webkit-details-marker {
+            display: none;
+        }
+
+        .faq summary::after {
+            content: "+";
+            position: absolute;
+            right: 15px;
+            top: 11px;
+            color: #B5123F;
+            font-size: 25.3px;
+            transition: transform .2s ease;
+        }
+
+        .faq details[open] summary::after {
+            transform: rotate(45deg);
+        }
+
+        .faq details p {
+            margin: 0;
+            padding: 0 16px 17px;
+            border-top: 1px solid rgba(181, 18, 63, .12);
+            padding-top: 12px;
+            font-size: 16px;
+            line-height: 1.55;
+            color: #4A4843;
+        }
+
+        .disclaimer {
+            padding: 22px 14px 18px;
+            background: #1C1C1C;
+            color: #EFEDC4;
+            border-top: 1px solid rgba(181, 18, 63, .25);
+        }
+
+        .disclaimer>p {
+            max-width: 390px;
+            margin: 0 auto 12px;
+            color: rgba(239, 237, 196, .65);
+            font-size: 10px;
+            line-height: 1.45;
+            text-align: center;
+        }
+
+        .policy-links {
+            margin-top: 12px;
+            padding-top: 12px;
+            border-top: 1px solid rgba(239, 237, 196, .18);
+        }
+
+        .policy-link-row {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            gap: 2px 6px;
+        }
+
+        .policy-link {
+            padding: 3px 2px;
+            border: 0;
+            background: transparent;
+            color: #EFEDC4;
+            font: inherit;
+            font-size: 12px;
+            text-decoration: underline;
+            text-underline-offset: 2px;
+            cursor: pointer;
+        }
+
+        .policy-link:hover,
+        .policy-link:focus-visible {
+            color: #FFFFFF;
+        }
+
+        .policy-separator {
+            color: #B5123F;
+            font-size: 10px;
+            opacity: .8;
+            user-select: none;
+        }
+
+        .policy-dialog {
+            width: min(420px, calc(100% - 32px));
+            max-height: min(80vh, 640px);
+            overflow-y: auto;
+            padding: 24px 20px 20px;
+            border: 2px solid #B5123F;
+            background: #FFFFFF;
+            color: #1C1C1C;
+            box-shadow: 0 10px 30px rgba(28, 28, 28, .2);
+            border-radius: 12px;
+        }
+
+        .policy-dialog::backdrop {
+            background: rgba(28, 28, 28, .6);
+        }
+
+        .policy-dialog h2 {
+            margin: 0 40px 14px 0;
+            color: #B5123F;
+            font-size: 26.4px;
+            line-height: 1.35;
+        }
+
+        .policy-dialog p {
+            margin: 0 0 12px;
+            font-size: 17.6px;
+            line-height: 1.6;
+            color: #383734;
+        }
+
+        .policy-close {
+            position: absolute;
+            top: 12px;
+            right: 12px;
+            width: 36px;
+            height: 36px;
+            border: 0;
+            background: #EFEDC4;
+            color: #B5123F;
+            font-size: 25.3px;
+            line-height: 1;
+            cursor: pointer;
+            border-radius: 6px;
+        }
+
+        .policy-close:hover {
+            background: #B5123F;
+            color: #FFFFFF;
+        }
+
+        .sticky-cta {
+            position: fixed;
+            z-index: 20;
+            right: 0;
+            bottom: max(12px, env(safe-area-inset-bottom));
+            left: 0;
+            width: min(450px, calc(100% - 20px));
+            margin-inline: auto;
+            padding: 10px 12px;
+            display: grid;
+            grid-template-columns: minmax(0, 1fr) auto;
+            align-items: center;
+            gap: 10px;
+            overflow: hidden;
+            border: 1.5px solid #B5123F;
+            background: #FFFFFF;
+            color: #1C1C1C;
+            box-shadow: 0 10px 30px rgba(28, 28, 28, .15), 0 0 14px rgba(181, 18, 63, .12);
+            opacity: 1;
+            transform: translateY(0);
+            visibility: visible;
+            transition: opacity .35s ease, transform .35s cubic-bezier(.2, .8, .2, 1), visibility 0s linear 0s;
+            border-radius: 18px;
+        }
+
+        .sticky-cta::before {
+            content: "";
+            position: absolute;
+            inset: 0 auto 0 0;
+            width: 6px;
+            background: #B5123F;
+        }
+
+        .sticky-cta[hidden] {
+            display: grid;
+            opacity: 0;
+            transform: translateY(16px);
+            visibility: hidden;
+            pointer-events: none;
+            transition: opacity .35s ease, transform .35s cubic-bezier(.2, .8, .2, 1), visibility 0s linear .35s;
+        }
+
+        .visually-hidden-frame {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            overflow: hidden;
+            clip-path: inset(50%);
+            white-space: nowrap;
+            border: 0;
+        }
+
+        .sticky-offer {
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+            line-height: 1.15;
+            padding-left: 4px;
+        }
+
+        .sticky-offer strong {
+            width: fit-content;
+            padding: 4px 9px;
+            border-radius: 999px;
+            background: rgba(181, 18, 63, .12);
+            color: #B5123F;
+            font-size: 12px;
+            letter-spacing: .08em;
+            line-height: 1;
+        }
+
+        .sticky-offer span {
+            color: #1C1C1C;
+            font-size: 13.5px;
+            font-weight: 700;
+        }
+
+        .sticky-button {
+            min-height: 42px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 7px;
+            padding: 10px 14px;
+            background: #B5123F;
+            color: #FFFFFF;
+            font-size: 15.5px;
+            font-weight: 700;
+            text-decoration: none;
+            white-space: nowrap;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(181, 18, 63, .3);
+            transition: transform .2s ease, box-shadow .2s ease, background .2s ease;
+        }
+
+        .sticky-button:hover {
+            transform: translateY(-2px);
+            background: #910D31;
+            color: #FFFFFF;
+            box-shadow: 0 6px 16px rgba(181, 18, 63, .35);
+        }
+
+        @media (max-width: 360px) {
+            .section-pad {
+                padding-inline: 18px;
+            }
+
+            .pain-list {
+                margin-inline: -18px;
+            }
+
+            .topline {
+                padding-inline: 18px;
+            }
+
+            h1 {
+                font-size: 30.8px;
+            }
+
+            .pain-row {
+                grid-template-columns: 22px 46px 1fr 14px;
+                gap: 7px;
+            }
+
+            .pain-photo {
+                width: 42px;
+                height: 42px;
+            }
+
+            .pain-row h3 {
+                font-size: 16.5px;
+            }
+
+            .product-row {
+                grid-template-columns: 96px 1fr;
+            }
+
+            .quality-copy {
+                padding-inline: 18px;
+            }
+
+            .quality>.fine-print {
+                padding-inline: 18px;
+            }
+
+            .offer-photo,
+            .review-banner {
+                margin-inline: -18px;
+            }
+
+            .review-banner {
+                margin-top: -38px;
+            }
+
+            .sticky-cta {
+                gap: 6px;
+                padding: 8px 10px;
+                border-radius: 15px;
+            }
+
+            .sticky-button {
+                padding-inline: 10px;
+                font-size: 14.2px;
+            }
+
+            .sticky-offer span { font-size: 12px; }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            *,
+            *::before,
+            *::after {
+                scroll-behavior: auto !important;
+                animation-duration: .01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: .01ms !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden">
+        <symbol id="icon-gift" viewBox="0 0 24 24"><path d="M20 12v9H4v-9M2 7h20v5H2zM12 7v14M12 7H7.5a2.5 2.5 0 1 1 2.5-2.5C10 6 12 7 12 7Zm0 0h4.5A2.5 2.5 0 1 0 14 4.5C14 6 12 7 12 7Z"/></symbol>
+        <symbol id="icon-truck" viewBox="0 0 24 24"><path d="M3 6h11v12H3zM14 10h4l3 3v5h-7z"/><circle cx="7.5" cy="18" r="1.5"/><circle cx="18" cy="18" r="1.5"/><path d="M14 13h7"/></symbol>
+        <symbol id="icon-clipboard" viewBox="0 0 24 24"><path d="M9 4H5v17h14V4h-4M9 3h6v4H9zM8 12h8M8 16h8"/></symbol>
+        <symbol id="icon-package" viewBox="0 0 24 24"><path d="m12 3 9 5-9 5-9-5 9-5ZM3 8v10l9 5 9-5V8M12 13v10M7.5 5.5l9 5"/></symbol>
+        <symbol id="icon-lock" viewBox="0 0 24 24"><rect x="4" y="10" width="16" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3M12 14v3"/></symbol>
+        <symbol id="icon-arrow-right" viewBox="0 0 24 24"><path d="M5 12h14M13 5l7 7-7 7"/></symbol>
+        <symbol id="icon-cart" viewBox="0 0 24 24"><path d="M3 4h2l2.2 11.2a2 2 0 0 0 2 1.6h8.9a2 2 0 0 0 2-1.6L22 8H6"/><circle cx="10" cy="21" r="1"/><circle cx="18" cy="21" r="1"/></symbol>
+        <symbol id="icon-check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></symbol>
+        <symbol id="icon-pin" viewBox="0 0 24 24"><path d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></symbol>
+        <symbol id="icon-star" viewBox="0 0 24 24"><path d="m12 2.8 2.8 5.7 6.3.9-4.6 4.4 1.1 6.2-5.6-3-5.6 3 1.1-6.2-4.6-4.4 6.3-.9L12 2.8Z"/></symbol>
+        <symbol id="icon-x" viewBox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18"/></symbol>
+        <symbol id="icon-shield-check" viewBox="0 0 24 24"><path d="M12 22s8-4 8-11V5l-8-3-8 3v6c0 7 8 11 8 11Z"/><path d="m9 12 2 2 4-4"/></symbol>
+    </svg>
+    <main class="page-shell">
+
+        <section class="hero" id="top" aria-labelledby="hero-title">
+            <img src="./Image/banner.avif" alt="White Spot Care Hero Image" loading="eager" fetchpriority="high" decoding="async" width="450" height="245">
+        </section>
+
+        <section class="pain" id="pain" aria-labelledby="pain-title">
+            <h2 id="pain-title">સમસ્યાને સમજો</h2>
+            <p class="section-lead">સફેદ ડાઘ સાથે દેખાતા ફેરફારો</p>
+            <div class="pain-list">
+                <div class="pain-card-grid">
+                    <article class="pain-card">
+                        <img src="./Image/problem1.avif" alt="Card image 1" loading="lazy">
+                        <h3>સફેદ ડાઘને કારણે સંકોચ</h3>
+                    </article>
+                    <article class="pain-card">
+                        <img src="./Image/problem2.avif" alt="Card image 2" loading="lazy">
+                        <h3>આત્મવિશ્વાસમાં ઘટાડો</h3>
+                    </article>
+                    <article class="pain-card">
+                        <img src="./Image/problem3.avif" alt="Card image 3" loading="lazy">
+                        <h3>ફોટો પડાવવામાં સંકોચ</h3>
+                    </article>
+                    <article class="pain-card">
+                        <img src="./Image/problem4.avif" alt="Card image 4" loading="lazy">
+                        <h3>લોકોના સવાલોની ચિંતા</h3>
+                    </article>
+                    <article class="pain-card">
+                        <img src="./Image/problem5.avif" alt="Card image 5" loading="lazy">
+                        <h3>ઇલાજ માટે ભટકવું</h3>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="kit section-pad" aria-labelledby="kit-title">
+            <h2 id="kit-title">White Spot Care</h2>
+            <h3 class="kit-subtitle">તમારી ત્વચાની સંભાળ માટે Ayurvedic Solution</h3>
+            <div class="product-intro-visual">
+                <div class="product-intro-badge">100%<br>Herbal</div>
+                <div class="product-intro-image">
+                    <img src="Image/product.avif" alt="White Spot Care product kit" loading="lazy">
+                </div>
+                <div class="product-intro-badge">Daily<br>Care</div>
+            </div>
+            <div class="product-intro-points" aria-label="Product highlights">
+                <div class="product-intro-point">ત્વચાની નિયમિત સંભાળ</div>
+                <div class="product-intro-point">સરળ routine</div>
+                <div class="product-intro-point">ત્રણ coordinated products</div>
+                <div class="product-intro-point">Label directions મુજબ</div>
+            </div>
+        </section>
+
+        <section class="how-it-works" aria-labelledby="how-it-works-title">
+            <h2 id="how-it-works-title">How It Works</h2>
+            <p class="section-lead">ત્વચાની સંભાળ માટે યોગ્ય દ્રષ્ટિકોણ</p>
+
+            <article class="how-card">
+                <div class="how-card-image"><img src="./Image/work1.avif" alt="Skin health support" loading="lazy"></div>
+                <div class="how-card-copy">
+                    <span class="how-card-number">01</span>
+                    <h3>Skin Health Support</h3>
+                    <p>ત્વચાના સામાન્ય સ્વાસ્થ્ય અને સંભાળ પર ધ્યાન આપવા માટે.</p>
+                </div>
+            </article>
+            <article class="how-card">
+                <div class="how-card-image"><img src="./Image/work2.avif" alt="Daily care support" loading="lazy"></div>
+                <div class="how-card-copy">
+                    <span class="how-card-number">02</span>
+                    <h3>Daily Care Support</h3>
+                    <p>ત્વચાની સંભાળ સંબંધિત નિયમિત ટેવો અપનાવવા માટે.</p>
+                </div>
+            </article>
+            <article class="how-card">
+                <div class="how-card-image"><img src="./Image/work3.avif" alt="Expert guided approach" loading="lazy"></div>
+                <div class="how-card-copy">
+                    <span class="how-card-number">03</span>
+                    <h3>Skin Protection</h3>
+                    <p>સફેદ ડાઘવાળી ત્વચાને તડકાથી બચાવવા માટે યોગ્ય સુરક્ષા અને નિયમિત સંભાળ</p>
+                </div>
+            </article>
+            <article class="how-card">
+                <div class="how-card-image"><img src="./Image/work4.avif" alt="Overall wellness support" loading="lazy"></div>
+                <div class="how-card-copy">
+                    <span class="how-card-number">04</span>
+                    <h3>Skin Monitoring</h3>
+                    <p>સફેદ ડાઘની સંભાળમાં મદદ કરવા અને ત્વચાના રંગમાં સુધારાને સપોર્ટ કરવા માટે.</p>
+                </div>
+            </article>
+        </section>
+
+        <section class="ingredients section-pad" aria-labelledby="ingredients-title">
+            <h2 id="ingredients-title">પ્રકૃતિથી <span>પ્રેરિત</span><br>Ingredients</h2>
+            <p class="section-lead">કુદરતી Ingredients થી નિર્મિત Skin Care</p>
+
+            <div class="ingredient-grid">
+                <article class="ingredient-item">
+                    <div class="ingredient-photo image-cut"><img src="./Image/ing1.avif" alt="હળદર" loading="lazy"></div>
+                    <span>હળદર</span>
+                    <p>ત્વચા સંભાળમાં પરંપરાગત ઉપયોગ</p><b aria-hidden="true">01</b>
+                </article>
+                <article class="ingredient-item">
+                    <div class="ingredient-photo image-cut"><img src="./Image/ing2.avif" alt="લીમડાના પાન" loading="lazy"></div>
+                    <span>લીમડો</span>
+                    <p>હર્બલ સંભાળનો જાણીતો ભાગ</p><b aria-hidden="true">02</b>
+                </article>
+                <article class="ingredient-item">
+                    <div class="ingredient-photo image-cut"><img src="./Image/ing3.avif" alt="મંજીષ્ઠા" loading="lazy"></div>
+                    <span>મંજીષ્ઠા</span>
+                    <p>આયુર્વેદિક formulations માં ઉપયોગ</p><b aria-hidden="true">03</b>
+                </article>
+                <article class="ingredient-item">
+                    <div class="ingredient-photo image-cut"><img src="./Image/ing4.avif" alt="એલોવેરા" loading="lazy"></div>
+                    <span>એલોવેરા</span>
+                    <p>સંભાળ formulations માં ઉપયોગ</p><b aria-hidden="true">04</b>
+                </article>
+            </div>
+        </section>
+
+        <section class="quality section-pad" aria-labelledby="quality-title">
+            <div class="quality-copy">
+                <h2 id="quality-title">ગુણવત્તા</h2>
+                <p>ગુણવત્તા અને સામગ્રીની માહિતી સ્પષ્ટપણે</p>
+            </div>
+            <div class="quality-marks" aria-label="આપેલ quality indicators">
+                <span class="mark-gmp"><img src="./Image/cert4.avif" alt="GMP certificate" loading="lazy"><b>GMP</b></span>
+                <span class="mark-iso"><img src="./Image/cert1.avif" alt="ISO certificate" loading="lazy"><b>ISO</b></span>
+                <span class="mark-fssai"><img src="./Image/cert2.avif" alt="FSSAI certificate" loading="lazy"><b>FSSAI</b></span>
+                <span class="mark-lab"><img src="./Image/cert3.avif" alt="Lab tested certificate" loading="lazy"><b>LAB TESTED</b></span>
+            </div>
+        </section>
+
+        <section class="offer section-pad" aria-labelledby="offer-title">
+            <div class="offer-copy">
+                <p class="offer-label"><svg class="icon" aria-hidden="true"><use href="#icon-gift"></use></svg>🎁 Combo Pack Special Offer</p>
+                <h2 id="offer-title">10% OFF</h2>
+                <p class="offer-subtitle">🔥 Limited Time Offer</p>
+            </div>
+            <div class="offer-photo"><img src="./Image/offer.avif" alt="White Spot Care with a 10% offer badge" loading="lazy"></div>
+            <div class="offer-copy">
+                <div class="offer-perks">
+                    <article class="offer-perk"><span class="offer-perk-icon"><svg class="icon" aria-hidden="true"><use href="#icon-gift"></use></svg></span><strong>10% OFF</strong><small>Combo Pack Savings</small></article>
+                    <article class="offer-perk"><span class="offer-perk-icon"><svg class="icon" aria-hidden="true"><use href="#icon-truck"></use></svg></span><strong>Free Delivery</strong><small>ફ્રી ડિલિવરી</small></article>
+                    <article class="offer-perk"><span class="offer-perk-icon"><svg class="icon" aria-hidden="true"><use href="#icon-clipboard"></use></svg></span><strong>Free Diet Chart</strong><small>ફ્રી ડાયેટ ચાર્ટ</small></article>
+                    <article class="offer-perk"><span class="offer-perk-icon"><svg class="icon" aria-hidden="true"><use href="#icon-package"></use></svg></span><strong>Cash on Delivery</strong><small>કેશ ઓન ડિલિવરી</small></article>
+                    <article class="offer-perk"><span class="offer-perk-icon"><svg class="icon" aria-hidden="true"><use href="#icon-lock"></use></svg></span><span class="offer-perk-copy"><strong>Secure Order Process</strong><small>તમારી માહિતી સુરક્ષિત રાખવામાં આવે છે</small></span></article>
+                </div>
+             
+                <a class="button button-dark" href="#order"><svg class="icon" aria-hidden="true"><use href="#icon-cart"></use></svg>અત્યારે જ તમારો Order Book કરો<svg class="icon" aria-hidden="true"><use href="#icon-arrow-right"></use></svg></a>
+            </div>
+        </section>
+
+        <section class="order section-pad" id="order" aria-labelledby="order-title">
+            <h2 id="order-title"><svg class="icon" aria-hidden="true"><use href="#icon-cart"></use></svg> તમારો White Spot Care ઓર્ડર કરો</h2>
+            <p class="order-lead">માત્ર 2 વિગતો ભરો</p>
+            <form id="order-form" method="post" target="order-response-frame" novalidate>
+                <label for="customer-name">તમારું નામ <span>*</span></label>
+                <input id="customer-name" name="name" type="text" placeholder="તમારું નામ દાખલ કરો" autocomplete="name"
+                    required>
+                <label for="customer-phone">મોબાઇલ નંબર (+91) <span>*</span></label>
+                <div class="phone-field">
+                    <span class="country-code" aria-hidden="true">+91</span>
+                    <input id="customer-phone" name="phone" type="tel" inputmode="numeric"
+                        placeholder="10 Digit Mobile Number" autocomplete="tel-national" maxlength="10"
+                        pattern="[0-9]{10}" required>
+                </div>
+                <input type="hidden" name="request_id" id="request-id">
+                <input type="hidden" name="utm_source">
+                <input type="hidden" name="utm_medium">
+                <input type="hidden" name="utm_campaign">
+                <input type="hidden" name="utm_campaign_id">
+                <input type="hidden" name="utm_adset">
+                <input type="hidden" name="utm_adset_id">
+                <input type="hidden" name="utm_ad">
+                <input type="hidden" name="utm_ad_id">
+                <input type="hidden" name="utm_content">
+                <input type="hidden" name="utm_term">
+                <input type="hidden" name="utm_placement">
+                <input type="hidden" name="device_platform">
+                <input type="hidden" name="fbclid">
+                <input type="hidden" name="fbc">
+                <input type="hidden" name="fbp">
+                <input type="hidden" name="landing_page">
+                <input type="hidden" name="referrer">
+                <button class="button button-primary submit-button" type="submit"><svg class="icon" aria-hidden="true"><use href="#icon-cart"></use></svg><span class="button-label">મારો Order Book કરો</span><span class="button-spinner" aria-hidden="true"></span></button>
+                <p class="form-error" id="form-error" role="alert" hidden></p>
+                <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+            </form>
+        </section>
+
+        <section class="reviews section-pad" aria-labelledby="reviews-title">
+            <h2 id="reviews-title">અમારા ગ્રાહકોનો અનુભવ</h2>
+
+            <article class="review-quote">
+                <div class="review-avatar-wrap"><span aria-hidden="true">NS</span><img class="review-avatar" src="./Image/test1.avif" alt="" loading="lazy"></div>
+                <div class="review-content">
+                    <div class="review-topline"><div class="stars" role="img" aria-label="Sample five-star rating"><svg class="icon"><use href="#icon-star"></use></svg><svg class="icon"><use href="#icon-star"></use></svg><svg class="icon"><use href="#icon-star"></use></svg><svg class="icon"><use href="#icon-star"></use></svg><svg class="icon"><use href="#icon-star"></use></svg></div><span class="review-sample">Sample review</span></div>
+                    <blockquote>“મને સફેદ ડાઘ હતા અને હું તેને લઈને પરેશાન રહેતી હતી. Dermatologist ની સલાહ લીધા પછી White Spot Care ને મારી skin-care routine માં, label ના નિર્દેશો મુજબ, સામેલ કર્યું.”</blockquote>
+                    <div class="review-byline"><p>Neha Sharma</p><span class="review-location"><svg class="icon" aria-hidden="true"><use href="#icon-pin"></use></svg>Jaipur, Rajasthan</span></div>
+                    <small class="review-product">White Spot Care</small>
+                </div>
+            </article>
+            <article class="review-quote">
+                <div class="review-avatar-wrap"><span aria-hidden="true">RK</span><img class="review-avatar" src="./Image/test2.avif" alt="" loading="lazy"></div>
+                <div class="review-content">
+                    <div class="review-topline"><div class="stars" role="img" aria-label="Sample five-star rating"><svg class="icon"><use href="#icon-star"></use></svg><svg class="icon"><use href="#icon-star"></use></svg><svg class="icon"><use href="#icon-star"></use></svg><svg class="icon"><use href="#icon-star"></use></svg><svg class="icon"><use href="#icon-star"></use></svg></div><span class="review-sample">Sample review</span></div>
+                    <blockquote>“White patches ને લઈને ઘણી ચિંતા રહેતી હતી. White Spot Care માં routine ના ત્રણ products ને સમજવું સરળ લાગ્યું; ત્વચાની સમસ્યા માટે dermatologist ની સલાહ પણ લીધી.”</blockquote>
+                    <div class="review-byline"><p>Rajesh Kumar</p><span class="review-location"><svg class="icon" aria-hidden="true"><use href="#icon-pin"></use></svg>Delhi</span></div>
+                    <small class="review-product">White Spot Care</small>
+                </div>
+            </article>
+            <article class="review-quote">
+                <div class="review-avatar-wrap"><span aria-hidden="true">PV</span><img class="review-avatar" src="./Image/test3.avif" alt="" loading="lazy"></div>
+                <div class="review-content">
+                    <div class="review-topline"><div class="stars" role="img" aria-label="Sample five-star rating"><svg class="icon"><use href="#icon-star"></use></svg><svg class="icon"><use href="#icon-star"></use></svg><svg class="icon"><use href="#icon-star"></use></svg><svg class="icon"><use href="#icon-star"></use></svg><svg class="icon"><use href="#icon-star"></use></svg></div><span class="review-sample">Sample review</span></div>
+                    <blockquote>“સફેદ ડાઘ લાંબા સમયથી હતા, તેથી સાચી માહિતી માટે dermatologist સાથે વાત કરી. White Spot Care નો ઉપયોગ મેં label directions મુજબ routine ના ભાગરૂપે કર્યો.”</blockquote>
+                    <div class="review-byline"><p>Pooja Verma</p><span class="review-location"><svg class="icon" aria-hidden="true"><use href="#icon-pin"></use></svg>Lucknow</span></div>
+                    <small class="review-product">White Spot Care</small>
+                </div>
+            </article>
+            <article class="review-quote">
+                <div class="review-avatar-wrap"><span aria-hidden="true">AS</span><img class="review-avatar" src="./Image/test4.avif" alt="" loading="lazy"></div>
+                <div class="review-content">
+                    <div class="review-topline"><div class="stars" role="img" aria-label="Sample five-star rating"><svg class="icon"><use href="#icon-star"></use></svg><svg class="icon"><use href="#icon-star"></use></svg><svg class="icon"><use href="#icon-star"></use></svg><svg class="icon"><use href="#icon-star"></use></svg><svg class="icon"><use href="#icon-star"></use></svg></div><span class="review-sample">Sample review</span></div>
+                    <blockquote>“હું white patches ને લઈને પરેશાન હતો. White Spot Care use કરતાં પહેલાં dermatologist પાસેથી તેનું કારણ સમજવાની સલાહ લીધી અને તેને મારી daily care routine માં સામેલ કર્યું.”</blockquote>
+                    <div class="review-byline"><p>Amit Singh</p><span class="review-location"><svg class="icon" aria-hidden="true"><use href="#icon-pin"></use></svg>Jaipur</span></div>
+                    <small class="review-product">White Spot Care</small>
+                </div>
+            </article>
+        </section>
+
+        <section class="faq section-pad" aria-labelledby="faq-title">
+            <h2 id="faq-title">વારંવાર પૂછાતા પ્રશ્નો</h2>
+            <details>
+                <summary>1. White Spot Care શું છે?</summary>
+                <p>White Spot Care skin-care routine છે જેમાં White Spot Care Tablet, Dermoveda Powder અને Malam Skin Care Cream શામેલ છે.</p>
+            </details>
+            <details>
+                <summary>2. શું દરેક સફેદ ડાઘ Vitiligo હોય છે?</summary>
+                <p>હા. ત્વચા પર સફેદ અથવા આછા patches ના ઘણા સંભવિત કારણો હોઈ શકે છે.</p>
+            </details>
+            <details>
+                <summary>3. શું White Spot Care Vitiligo ને મટાડે છે?</summary>
+                <p>White Spot Care ને vitiligo ના guaranteed cure અથવા guaranteed treatment તરીકે દર્શાવી શકાય નહીં. Vitiligo એક medical condition છે અને તેના diagnosis તથા appropriate treatment માટે dermatologist મહત્વપૂર્ણ છે.</p>
+            </details>
+            <details>
+                <summary>4. કેટલા દિવસોમાં result જોવા મળશે?</summary>
+                <p>કોઈ ચોક્કસ સમયમાં result ની guarantee આપી શકાય નહીં. Skin conditions માં response વ્યક્તિ અને underlying condition મુજબ અલગ હોઈ શકે છે.</p>
+            </details>
+            <details>
+                <summary>5. શું આનો રોજ ઉપયોગ કરી શકાય?</summary>
+                <p>Products ને packaging/label પર આપેલ recommended directions મુજબ ઉપયોગ કરો.</p>
+            </details>
+            <details>
+                <summary>6. શું COD available છે?</summary>
+                <p>હા, Cash on Delivery available છે, subject to delivery location and order availability.</p>
+            </details>
+        </section>
+
+        <footer class="disclaimer section-pad">
+            <p>Disclaimer: This product is intended for general skin-care support. Results may vary from person to person. It is not intended to diagnose, treat, cure, or prevent any disease. Please read the product label and follow the recommended usage. Consult a qualified healthcare professional for persistent or serious skin concerns.</p>
+            <nav class="policy-links" aria-label="Policies and support">
+                <div class="policy-link-row">
+                    <button class="policy-link" type="button" data-policy="privacy">Privacy Policy</button>
+                    <span class="policy-separator" aria-hidden="true">|</span>
+                    <button class="policy-link" type="button" data-policy="terms">Terms &amp; Conditions</button>
+                    <span class="policy-separator" aria-hidden="true">|</span>
+                    <button class="policy-link" type="button" data-policy="shipping">Shipping Policy</button>
+                    <span class="policy-separator" aria-hidden="true">|</span>
+                    <button class="policy-link" type="button" data-policy="cancellation">Cancellation Policy</button>
+                    <span class="policy-separator" aria-hidden="true">|</span>
+                    <button class="policy-link" type="button" data-policy="contact">Contact Us</button>
+                    <span class="policy-separator" aria-hidden="true">|</span>
+                    <button class="policy-link" type="button" data-policy="disclaimer">Legal Disclaimer</button>
+                </div>
+            </nav>
+        </footer>
+    </main>
+    <dialog class="policy-dialog" id="policy-dialog" aria-labelledby="policy-dialog-title">
+        <form method="dialog">
+            <button class="policy-close" type="submit" aria-label="Close policy"><svg class="icon" aria-hidden="true"><use href="#icon-x"></use></svg></button>
+        </form>
+        <h2 id="policy-dialog-title"></h2>
+        <div id="policy-dialog-content"></div>
+    </dialog>
+    <aside class="sticky-cta" id="sticky-cta" aria-label="White Spot Care offer" hidden>
+        <div class="sticky-offer"><strong>10% OFF</strong><span>Free Delivery · COD</span></div>
+        <a class="sticky-button" href="#order">અત્યારે જ Order કરો<svg class="icon" aria-hidden="true"><use href="#icon-arrow-right"></use></svg></a>
+    </aside>
+    <iframe name="order-response-frame" id="order-response-frame" title="Order submission response"
+        class="visually-hidden-frame"></iframe>
+    <div class="form-loading-overlay" id="form-loading-overlay" role="status" aria-live="assertive" hidden>
+        <span class="overlay-spinner" aria-hidden="true"></span>
+        <p>તમારો order મોકલાઈ રહ્યો છે…</p>
+    </div>
+    <script>
+        document.addEventListener("contextmenu", (event) => event.preventDefault());
+        document.addEventListener("wheel", (event) => {
+            if (event.ctrlKey) event.preventDefault();
+        }, { passive: false });
+        document.addEventListener("keydown", (event) => {
+            if ((event.ctrlKey || event.metaKey) && ["+", "=", "-", "0", "_"].includes(event.key)) {
+                event.preventDefault();
+            }
+        });
+
+        const GOOGLE_APPS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbzla531K40Mhx3ffb0z80aQe31ufq_2UNHu4cc1QBe0-684cGyDTpZhDRrihfr8SmJggA/exec";
+        const UTM_KEYS = [
+            "utm_source", "utm_medium", "utm_campaign", "utm_campaign_id", "utm_adset",
+            "utm_adset_id", "utm_ad", "utm_ad_id", "utm_content", "utm_term",
+            "utm_placement", "device_platform"
+        ];
+        const ATTRIBUTION_KEY = "dermocare_attribution_v1";
+        const form = document.querySelector("#order-form");
+        const nameInput = document.querySelector("#customer-name");
+        const phoneInput = document.querySelector("#customer-phone");
+        const errorMessage = document.querySelector("#form-error");
+        const statusMessage = document.querySelector("#form-status");
+        const submitButton = form.querySelector("button[type='submit']");
+        const submitLabel = submitButton.querySelector(".button-label");
+        const responseFrame = document.querySelector("#order-response-frame");
+        const loadingOverlay = document.querySelector("#form-loading-overlay");
+        const policyDialog = document.querySelector("#policy-dialog");
+        const policyDialogTitle = document.querySelector("#policy-dialog-title");
+        const policyDialogContent = document.querySelector("#policy-dialog-content");
+        let pendingRequestId = "";
+
+        const POLICY_CONTENT = {
+            privacy: {
+                title: "Privacy Policy",
+                paragraphs: [
+                    "Order request માટે form તમારું નામ અને mobile number લે છે. Page URL, referrer અને ad attribution details પણ request સાથે મોકલી શકાય છે.",
+                    "આ માહિતીનો હેતુ order processing અને confirmation છે. Publish કરતાં પહેલાં તમારી actual data access, retention અને support-contact details મુજબ આ policy ની સમીક્ષા કરો."
+                ]
+            },
+            terms: {
+                title: "Terms & Conditions",
+                paragraphs: [
+                    "White Spot Care ને નિયમિત skin-care routine ના રૂપમાં રજૂ કરવામાં આવ્યું છે; તેને કોઈ disease ના cure અથવા guaranteed treatment તરીકે ન ગણો.",
+                    "Products ને packaging/label પર આપેલ directions મુજબ ઉપયોગ કરો. સફેદ કે આછા patches નું કારણ જાણવા અને treatment માટે dermatologist ની સલાહ લો."
+                ]
+            },
+            shipping: {
+                title: "Shipping Policy",
+                paragraphs: [
+                    "Home delivery અને Cash on Delivery ની ઉપલબ્ધતા delivery location અને order availability પર નિર્ભર કરે છે.",
+                    "Free delivery કે promotional offer ની લાગુ શરતો order confirmation વખતે ચકાસો. આ page પર કોઈ ચોક્કસ delivery timeline ની guarantee આપવામાં આવતી નથી."
+                ]
+            },
+            cancellation: {
+                title: "Cancellation Policy",
+                paragraphs: [
+                    "Order cancel અથવા update કરવા માટે confirmation પછી અમારી team નો સંપર્ક કરો.",
+                    "Cancellation ની ઉપલબ્ધતા order ની processing અને dispatch સ્થિતિ પર નિર્ભર કરશે. લાગુ eligibility ની પુષ્ટિ team સાથે કરો."
+                ]
+            },
+            contact: {
+                title: "Contact Us",
+                paragraphs: [
+                    "Order confirmation માટે અમારી team તમારો સંપર્ક કરશે. Order સંબંધિત સહાય માટે confirmation message અથવા product packaging પર આપેલ White Spot Care support details નો ઉપયોગ કરો."
+                ]
+            },
+            disclaimer: {
+                title: "Legal Disclaimer",
+                paragraphs: [
+                    "White Spot Care ને કોઈ disease ના cure, guaranteed treatment અથવા guaranteed recovery તરીકે રજૂ કરી શકાય નહીં.",
+                    "ત્વચા પર સફેદ કે આછા patches ના ઘણા સંભવિત કારણો હોઈ શકે છે. Diagnosis અને યોગ્ય treatment માટે dermatologist ની સલાહ લો. કોઈ ચોક્કસ સમયમાં result ની guarantee આપી શકાય નહીં."
+                ]
+            }
+        };
+
+        document.querySelectorAll("[data-policy]").forEach((button) => {
+            button.addEventListener("click", () => {
+                const policy = POLICY_CONTENT[button.dataset.policy];
+                if (!policy) return;
+                policyDialogTitle.textContent = policy.title;
+                policyDialogContent.replaceChildren(...policy.paragraphs.map((text) => {
+                    const paragraph = document.createElement("p");
+                    paragraph.textContent = text;
+                    return paragraph;
+                }));
+                policyDialog.showModal();
+            });
+        });
+
+        policyDialog.addEventListener("click", (event) => {
+            if (event.target === policyDialog) policyDialog.close();
+        });
+        let responseTimeout;
+
+        function readStoredAttribution() {
+            try {
+                return JSON.parse(sessionStorage.getItem(ATTRIBUTION_KEY) || "{}");
+            } catch {
+                return {};
+            }
+        }
+
+        function setHidden(name, value) {
+            const field = form.elements.namedItem(name);
+            if (field) field.value = value || "";
+        }
+
+        function cookie(name) {
+            const match = document.cookie.match(new RegExp("(?:^|;\\s*)" + name + "=([^;]*)"));
+            if (!match) return "";
+            try {
+                return decodeURIComponent(match[1]);
+            } catch {
+                return match[1];
+            }
+        }
+
+        function capture() {
+            const params = new URLSearchParams(window.location.search);
+            const attribution = readStoredAttribution();
+
+            UTM_KEYS.forEach((key) => {
+                const value = params.get(key) || attribution[key] || "";
+                setHidden(key, value);
+                if (params.get(key)) attribution[key] = params.get(key);
+            });
+
+            try {
+                sessionStorage.setItem(ATTRIBUTION_KEY, JSON.stringify(attribution));
+            } catch {
+            }
+
+            const fbclid = params.get("fbclid") || "";
+            setHidden("fbclid", fbclid);
+            setHidden("fbc", cookie("_fbc") || (fbclid ? `fb.1.${Date.now()}.${fbclid}` : ""));
+            setHidden("fbp", cookie("_fbp"));
+            setHidden("landing_page", window.location.href);
+            setHidden("referrer", document.referrer);
+        }
+
+        capture();
+
+        function resetSubmitButton() {
+            window.clearTimeout(responseTimeout);
+            submitButton.disabled = false;
+            submitButton.classList.remove("is-loading");
+            form.classList.remove("is-loading");
+            loadingOverlay.hidden = true;
+            document.body.classList.remove("is-form-loading");
+            submitLabel.textContent = "મારો Order Book કરો";
+        }
+
+        nameInput.addEventListener("input", () => {
+            nameInput.value = nameInput.value
+                .replace(/[^A-Za-z\u0900-\u097F\u0A80-\u0AFF ]/g, "")
+                .replace(/\s{2,}/g, " ")
+                .replace(/^\s+/, "");
+            errorMessage.hidden = true;
+        });
+
+        phoneInput.addEventListener("input", () => {
+            let value = phoneInput.value.replace(/\D/g, "").slice(0, 10);
+            if (value && !/^[6-9]/.test(value)) value = value.slice(1);
+            phoneInput.value = value;
+            errorMessage.hidden = true;
+        });
+
+        function validName(value) {
+            return /^[A-Za-z\u0900-\u097F\u0A80-\u0AFF]+(?: [A-Za-z\u0900-\u097F\u0A80-\u0AFF]+)*$/.test(value.trim());
+        }
+
+        function validPhone(value) {
+            return /^[6-9][0-9]{9}$/.test(value);
+        }
+
+        form.addEventListener("submit", (event) => {
+            event.preventDefault();
+            errorMessage.hidden = true;
+            statusMessage.textContent = "";
+
+            const nameOk = validName(nameInput.value);
+            const phoneOk = validPhone(phoneInput.value);
+            if (!nameOk || !phoneOk || !form.reportValidity()) {
+                errorMessage.textContent = !nameOk
+                    ? "કૃપા કરીને તમારું નામ દાખલ કરો."
+                    : "કૃપા કરીને 6 થી 9 થી શરૂ થતો 10 અંકનો મોબાઇલ નંબર દાખલ કરો.";
+                errorMessage.hidden = false;
+                (!nameOk ? nameInput : phoneInput).focus();
+                return;
+            }
+
+            if (!/^https:\/\/script\.google\.com\/macros\/s\/[^/]+\/exec(?:\?.*)?$/.test(GOOGLE_APPS_SCRIPT_URL)) {
+                statusMessage.textContent = "Order submission configure નથી. Google Apps Script Web App URL ઉમેર્યા પછી ફરી પ્રયાસ કરો.";
+                return;
+            }
+
+            pendingRequestId = window.crypto?.randomUUID?.()
+                || `${Date.now()}-${Math.random().toString(36).slice(2)}`;
+            capture();
+            form.elements.namedItem("request_id").value = pendingRequestId;
+            form.action = GOOGLE_APPS_SCRIPT_URL;
+            form.classList.add("is-loading");
+            loadingOverlay.hidden = false;
+            document.body.classList.add("is-form-loading");
+            submitButton.disabled = true;
+            submitButton.classList.add("is-loading");
+            submitLabel.textContent = "કૃપા કરીને રાહ જુઓ…";
+            statusMessage.textContent = "તમારો order સુરક્ષિત રીતે મોકલાઈ રહ્યો છે…";
+            const thankYouUrl = new URL("thankyou.html", window.location.href);
+            UTM_KEYS.forEach((key) => {
+                const value = form.elements.namedItem(key).value;
+                if (value) thankYouUrl.searchParams.set(key, value);
+            });
+            if (typeof window.fbq === "function") {
+                window.fbq("track", "Lead", { content_name: "White Spot Care Skin Care" }, { eventID: pendingRequestId });
+            }
+            responseTimeout = window.setTimeout(() => {
+                resetSubmitButton();
+                statusMessage.textContent = "હજુ confirmation મળ્યું નથી. ફરી મોકલતાં પહેલાં order status ચકાસી લો.";
+            }, 20000);
+            HTMLFormElement.prototype.submit.call(form);
+            window.setTimeout(() => {
+                window.clearTimeout(responseTimeout);
+                window.location.assign(thankYouUrl.href);
+            }, 1000);
+        });
+
+        window.addEventListener("message", (event) => {
+            const result = event.data;
+            if (result?.type !== "dermocare-order-result"
+                || !pendingRequestId
+                || result.requestId !== pendingRequestId) return;
+
+            resetSubmitButton();
+            if (!result.ok) {
+                statusMessage.textContent = result.message || "Order save થઈ શક્યો નહીં. કૃપા કરીને થોડીવાર પછી ફરી પ્રયાસ કરો.";
+            }
+        });
+
+        document.querySelectorAll(".review-avatar").forEach((image) => {
+            image.addEventListener("error", () => {
+                image.hidden = true;
+            }, { once: true });
+        });
+
+        const qualitySection = document.querySelector(".quality");
+        const orderSection = document.querySelector("#order");
+        if (qualitySection && orderSection) qualitySection.after(orderSection);
+        const offerSection = document.querySelector(".offer");
+        if (offerSection && orderSection) offerSection.after(orderSection);
+
+        const stickyCta = document.querySelector("#sticky-cta");
+        const stickyBlockers = new Set();
+        let painSectionVisible = false;
+        const stickyObserver = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.target.id === "pain") {
+                    if (entry.isIntersecting) painSectionVisible = true;
+                    return;
+                }
+
+                if (entry.isIntersecting) {
+                    stickyBlockers.add(entry.target);
+                } else {
+                    stickyBlockers.delete(entry.target);
+                }
+            });
+            stickyCta.hidden = !painSectionVisible || stickyBlockers.size > 0;
+        }, { threshold: 0.01 });
+
+        document.querySelectorAll("#pain, #top, #order, .disclaimer").forEach((section) => {
+            stickyObserver.observe(section);
+        });
+    </script>
+</body>
+
+</html>

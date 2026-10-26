@@ -1,0 +1,310 @@
+<!doctype html>
+<html lang="gu">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+    />
+    <meta name="theme-color" content="#EFEDC4" />
+    <title>Order Received | White Spot Care</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Halant:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        color-scheme: light;
+        --blue: #B5123F;
+        --sky: #B5123F;
+        --black: #EFEDC4;
+        --navy: #FFFFFF;
+        --muted: #5A5852;
+        --white: #1C1C1C;
+        --pure-white: #FFFFFF;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        min-height: 100%;
+      }
+      body {
+        margin: 0;
+        display: grid;
+        place-items: center;
+        padding: 18px 12px;
+        background: #D8D6A8;
+        color: var(--white);
+        font:
+          18px/1.55 "Halant",
+          "Noto Serif Devanagari",
+          serif;
+      }
+      main {
+        position: relative;
+        width: min(100%, 450px);
+        min-height: 700px;
+        overflow: hidden;
+        padding: 24px 20px 28px;
+        background: #EFEDC4;
+        border: 1px solid rgba(181, 18, 63, 0.22);
+        box-shadow: 0 24px 70px rgba(28, 28, 28, 0.15);
+        text-align: center;
+        border-radius: 16px;
+      }
+      main:before {
+        content: "";
+        position: absolute;
+        width: 280px;
+        height: 280px;
+        top: -130px;
+        left: 50%;
+        transform: translateX(-50%);
+        border-radius: 50%;
+        background: rgba(181, 18, 63, 0.12);
+        filter: blur(35px);
+        pointer-events: none;
+      }
+      .topline {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-bottom: 16px;
+        border-bottom: 1px solid rgba(28, 28, 28, 0.12);
+      }
+      .wordmark {
+        color: var(--white);
+        font-size: 19px;
+        font-weight: 700;
+        letter-spacing: 0.05em;
+      }
+      .wordmark span {
+        color: var(--sky);
+      }
+      .badge {
+        color: var(--sky);
+        font-size: 13px;
+        font-weight: 700;
+        letter-spacing: 0.06em;
+      }
+      .eyebrow {
+        position: relative;
+        margin: 34px 0 6px;
+        color: var(--sky);
+        font-size: 15px;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+      }
+      h1 {
+        position: relative;
+        margin: 0 0 7px;
+        font-size: clamp(34px, 9vw, 43px);
+        line-height: 1.18;
+        color: #1C1C1C;
+      }
+      .intro {
+        position: relative;
+        margin: 0 auto 21px;
+        max-width: 330px;
+        color: var(--muted);
+        font-size: 18px;
+      }
+      .product-card {
+        position: relative;
+        display: grid;
+        place-items: center;
+        min-height: 285px;
+        margin: 0 0 22px;
+        overflow: hidden;
+        border: 1px solid rgba(181, 18, 63, 0.22);
+        border-radius: 20px;
+        background:
+          radial-gradient(circle, rgba(181, 18, 63, 0.12), transparent 62%),
+          #FFFFFF;
+        box-shadow: 0 8px 24px rgba(28, 28, 28, 0.06);
+      }
+      .product-card:before,
+      .product-card:after {
+        content: "";
+        position: absolute;
+        border: 1px dashed rgba(181, 18, 63, 0.35);
+        border-radius: 50%;
+      }
+      .product-card:before {
+        width: 245px;
+        height: 245px;
+      }
+      .product-card:after {
+        width: 190px;
+        height: 190px;
+        border-color: rgba(28, 28, 28, 0.15);
+      }
+      .product {
+        position: relative;
+        z-index: 1;
+        width: 230px;
+        height: 230px;
+        object-fit: contain;
+        filter: drop-shadow(0 14px 18px rgba(28, 28, 28, 0.15));
+        transition: transform 0.35s ease;
+      }
+      .product-card:hover .product {
+        transform: scale(1.06) rotate(-2deg);
+      }
+      .product-label {
+        position: absolute;
+        z-index: 2;
+        right: 14px;
+        bottom: 14px;
+        padding: 5px 12px;
+        border: 1px solid #FFFFFF;
+        border-radius: 99px;
+        background: var(--blue);
+        color: #FFFFFF;
+        font-size: 12px;
+        font-weight: 700;
+        box-shadow: 0 4px 12px rgba(181, 18, 63, 0.3);
+      }
+      .success {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin: 0 0 18px;
+        padding: 14px 16px;
+        border: 1px solid rgba(181, 18, 63, 0.22);
+        background: #FFFFFF;
+        border-radius: 12px;
+        box-shadow: 0 4px 14px rgba(28, 28, 28, 0.05);
+        text-align: left;
+      }
+      .check {
+        flex: 0 0 38px;
+        width: 38px;
+        height: 38px;
+        display: grid;
+        place-items: center;
+        border-radius: 50%;
+        background: var(--blue);
+        color: #FFFFFF;
+        box-shadow: 0 4px 10px rgba(181, 18, 63, 0.25);
+      }
+      .check svg {
+        width: 22px;
+        height: 22px;
+        stroke: currentColor;
+        stroke-width: 2.5;
+        fill: none;
+      }
+      .success strong {
+        display: block;
+        color: var(--sky);
+        font-size: 17px;
+      }
+      .success span {
+        display: block;
+        color: var(--muted);
+        font-size: 14px;
+        line-height: 1.35;
+      }
+      .next {
+        margin: 0 0 20px;
+        color: #1C1C1C;
+        font-size: 17px;
+      }
+      .order-ref {
+        margin: 0 0 18px;
+        color: var(--sky);
+        font-size: 14px;
+        font-weight: 700;
+      }
+      .button {
+        display: inline-flex;
+        min-height: 52px;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        padding: 11px 18px;
+        border-radius: 8px;
+        background: var(--blue);
+        color: #FFFFFF;
+        font-weight: 700;
+        text-decoration: none;
+        box-shadow: 0 6px 18px rgba(181, 18, 63, 0.3);
+        transition: transform 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
+      }
+      .button:hover {
+        transform: translateY(-2px);
+        background: #910D31;
+        color: #FFFFFF;
+        box-shadow: 0 8px 22px rgba(181, 18, 63, 0.4);
+      }
+      @media (max-width: 380px) {
+        main {
+          min-height: 660px;
+          padding-inline: 15px;
+        }
+        .product-card {
+          min-height: 245px;
+        }
+        .product {
+          width: 195px;
+          height: 195px;
+        }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        *,
+        *::before,
+        *::after {
+          transition: none !important;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="topline">
+        <div class="wordmark">WHITE SPOT <span>CARE</span></div>
+        <div class="badge">ORDER RECEIVED</div>
+      </div>
+      <p class="eyebrow">તમારો order સફળતાપૂર્વક નોંધાયો છે</p>
+      <h1>આભાર!</h1>
+      <p class="intro">તમારી skin-care journey હવે શરૂ થઈ ગઈ છે.</p>
+      <div class="product-card">
+        <img
+          class="product"
+          src="Image/product.avif"
+          alt="White Spot Care"
+        /><span class="product-label">WHITE SPOT CARE</span>
+      </div>
+      <div class="success">
+        <div class="check" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="m5 12 4 4L19 6" /></svg>
+        </div>
+        <div>
+          <strong>Request received</strong
+          ><span>અમારી team confirmation માટે તમારો સંપર્ક કરશે.</span>
+        </div>
+      </div>
+      <p class="next">
+        કૃપા કરીને તમારો phone ચાલુ રાખો જેથી order confirmation સરળતાથી થઈ શકે.
+      </p>
+      <p class="order-ref" id="order-ref" hidden></p>
+      <a class="button" href="index.html">White Spot Care પર પાછા જાઓ</a>
+    </main>
+    <script>
+      const orderId = new URLSearchParams(window.location.search).get(
+        "order_id",
+      );
+      if (orderId) {
+        const reference = document.querySelector("#order-ref");
+        reference.textContent = `Order reference: ${orderId}`;
+        reference.hidden = false;
+      }
+    </script>
+  </body>
+</html>
