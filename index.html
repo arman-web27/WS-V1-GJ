@@ -2572,7 +2572,10 @@
             submitButton.classList.add("is-loading");
             submitLabel.textContent = "કૃપા કરીને રાહ જુઓ…";
             statusMessage.textContent = "તમારો order સુરક્ષિત રીતે મોકલાઈ રહ્યો છે…";
-            const thankYouUrl = new URL("thankyou.html", window.location.href);
+            // Keep the URL casing aligned with the deployed filename. This matters on
+            // case-sensitive hosts (Linux/most static hosting), where thankyou.html
+            // and Thankyou.html are different files.
+            const thankYouUrl = new URL("Thankyou.html", window.location.href);
             UTM_KEYS.forEach((key) => {
                 const value = form.elements.namedItem(key).value;
                 if (value) thankYouUrl.searchParams.set(key, value);
