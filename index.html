@@ -2374,7 +2374,7 @@
             }
         });
 
-        const GOOGLE_APPS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbzla531K40Mhx3ffb0z80aQe31ufq_2UNHu4cc1QBe0-684cGyDTpZhDRrihfr8SmJggA/exec";
+        const GOOGLE_APPS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwiRzAxYFWwx74v8j3HNgUgrdTl5ujEovgSb2JGfKhhs0BdFh8IH2AzsiOOmtTgiT1Qjg/exec";
         const UTM_KEYS = [
             "utm_source", "utm_medium", "utm_campaign", "utm_campaign_id", "utm_adset",
             "utm_adset_id", "utm_ad", "utm_ad_id", "utm_content", "utm_term",
@@ -2588,10 +2588,12 @@
                 statusMessage.textContent = "હજુ confirmation મળ્યું નથી. ફરી મોકલતાં પહેલાં order status ચકાસી લો.";
             }, 20000);
             HTMLFormElement.prototype.submit.call(form);
+            // Give the Apps Script POST/redirect enough time to finish before
+            // navigating away from the page, especially on slower mobile networks.
             window.setTimeout(() => {
                 window.clearTimeout(responseTimeout);
                 window.location.assign(thankYouUrl.href);
-            }, 1000);
+            }, 3000);
         });
 
         window.addEventListener("message", (event) => {
